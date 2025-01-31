@@ -125,33 +125,33 @@ function deleteContents($dir) {
 }
 
 // 🖤 Function to black out bottom 150px of the image
-function blackoutBottom($filePath, $blackoutHeight) {
-    echo "🖤 Blacking out bottom $blackoutHeight pixels of image: $filePath\n";
-
+// function blackoutBottom($filePath, $blackoutHeight) {
+//    echo "🖤 Blacking out bottom $blackoutHeight pixels of image: $filePath\n";
+//
     // Load the image
-    $image = imagecreatefromjpeg($filePath);
-    if (!$image) {
-        echo "❌ Error: Failed to open image.\n";
-        return;
-    }
-
-    $width = imagesx($image);
-    $height = imagesy($image);
-
+//    $image = imagecreatefromjpeg($filePath);
+//    if (!$image) {
+//        echo "❌ Error: Failed to open image.\n";
+//        return;
+//    }
+//
+//    $width = imagesx($image);
+//    $height = imagesy($image);
+//
     // Create a black rectangle at the bottom
-    $black = imagecolorallocate($image, 0, 0, 0);
-    imagefilledrectangle($image, 0, $height - $blackoutHeight, $width, $height, $black);
-
+//    $black = imagecolorallocate($image, 0, 0, 0);
+//    imagefilledrectangle($image, 0, $height - $blackoutHeight, $width, $height, $black);
+//
     // Save the modified image
-    if (imagejpeg($image, $filePath, 90)) {
-        echo "✅ Image modification complete: $filePath\n";
-    } else {
-        echo "❌ Error: Failed to save modified image.\n";
-    }
-
+//    if (imagejpeg($image, $filePath, 90)) {
+//        echo "✅ Image modification complete: $filePath\n";
+//    } else {
+//        echo "❌ Error: Failed to save modified image.\n";
+//    }
+//
     // Free memory
-    imagedestroy($image);
-}
+//    imagedestroy($image);
+// }
 
 // Example usage & Instructions:
 
