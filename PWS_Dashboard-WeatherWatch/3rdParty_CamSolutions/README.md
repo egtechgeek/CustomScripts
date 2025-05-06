@@ -2,7 +2,7 @@ This is the future location for additional PWS Dashboard scripts that require a 
 
 # Roadmap
 
-## -USB Camera Capture for PWS_Dashboard
+## -USB Camera Capture for PWS_Dashboard (Now Available for Testing)
     This script will require the use of a Raspberry Pi or minimal Debian machine.
     This script will require very basic knowledge to modify it to your needs, such as setting the USB port of your camera (/dev/ttyUSB0 is typically the default when no other usb devices are connected, and FTP information for your PWS_Dashboard web server.
     Functionality of this script will be fairly straightforward. It will perform an image capture at the interval you specify in crontab. Followed by an FTP Push to your specified web server in the target directory.
