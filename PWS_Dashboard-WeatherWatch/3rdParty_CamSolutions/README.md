@@ -2,7 +2,7 @@ This is the future location for additional PWS Dashboard scripts that require a 
 
 # Roadmap
 
-## -UniFi Protect Bridge for PWS_Dashboard
+##<span>&#10003;</span> -UniFi Protect Bridge for PWS_Dashboard
     This script will require that you have full admin access to your Unifi Protect Cameras to modify settings and features.
     This script will only work with Unifi Protect Cameras that support "Enable Anonymous Snapshot".
     This script will require the use of a Raspberry Pi or minimal Debian virtual machine running inside of your local network, and run as crontab.
