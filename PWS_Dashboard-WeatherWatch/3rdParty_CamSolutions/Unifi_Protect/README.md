@@ -1,7 +1,7 @@
 # -UniFi Protect Bridge for PWS_Dashboard
 
 
-## Instructions
+## Instructions ( v2 offers SFTP support )
 
 -Starting with a Raspberry Pi running Raspbian or Debian, OpenSSH highly recommended
 
