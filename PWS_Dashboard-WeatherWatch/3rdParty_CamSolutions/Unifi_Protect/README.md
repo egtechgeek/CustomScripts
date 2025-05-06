@@ -1,24 +1,24 @@
-## -UniFi Protect Bridge for PWS_Dashboard
+# -UniFi Protect Bridge for PWS_Dashboard
 
 
-# Instructions
+## Instructions
 
 -Starting with a Raspberry Pi running Raspbian or Debian, OpenSSH highly recommended
 
 -Install Prerequisites:		sudo apt update && sudo apt install wget ftp curl
 
--Download unificam.sh:		wget ...
+-Download unificam.sh:		wget https://github.com/egtechgeek/CustomScripts/blob/main/PWS_Dashboard-WeatherWatch/3rdParty_CamSolutions/Unifi_Protect/unificam.sh
 
--Edit unificam.sh:			nano ...
-	In unificam.sh, Be sure to populate the following tags:
-			DOWNLOAD_URL, NEW_FILENAME, FTP_HOST, FTP_USER, FTP_PASS, REMOTE_PATH
+-Edit unificam.sh:			nano unificam.sh
+In unificam.sh, Be sure to populate the following tags:
+DOWNLOAD_URL, NEW_FILENAME, FTP_HOST, FTP_USER, FTP_PASS, REMOTE_PATH
 			
 -Test run the script:		./unificam.sh
 
 -If all goes well, configure unificam.sh to run at your desired intervals automatically by using crontab.
 
 
-# Notes
+## Notes
     -This script will require that you have full admin access to your Unifi Protect Cameras to modify settings and features.
     -This script will only work with Unifi Protect Cameras that support "Enable Anonymous Snapshot".
     -This script will require the use of a Raspberry Pi or minimal Debian virtual machine running inside of your local network, and run as crontab.
