@@ -1,13 +1,7 @@
-# -UniFi Protect Bridge for PWS_Dashboard
+## -UniFi Protect Bridge for PWS_Dashboard
 
-    -This script will require that you have full admin access to your Unifi Protect Cameras to modify settings and features.
-    -This script will only work with Unifi Protect Cameras that support "Enable Anonymous Snapshot".
-    -This script will require the use of a Raspberry Pi or minimal Debian virtual machine running inside of your local network, and run as crontab.
-    -This script will require very basic knowledge to modify it to your needs, such as setting the local ip address of the desired camera, and FTP information for your PWS_Dashboard web server.
-    -Functionality of this script is fairly straightforward. It will perform a WGET [http://yourcameralocalip/snap.jpeg at the interval you specify in crontab. Followed by an FTP Push to your specified web server, overwriting any existing file of the same "snap.jpeg" name in the target directory.
-    -This should be used in conjunction with with a future updated "webcam_cron" script for Unifi.
-	
-## Instructions
+
+# Instructions
 
 -Starting with a Raspberry Pi running Raspbian or Debian, OpenSSH highly recommended
 
@@ -22,3 +16,13 @@
 -Test run the script:		./unificam.sh
 
 -If all goes well, configure unificam.sh to run at your desired intervals automatically by using crontab.
+
+
+# Notes
+    -This script will require that you have full admin access to your Unifi Protect Cameras to modify settings and features.
+    -This script will only work with Unifi Protect Cameras that support "Enable Anonymous Snapshot".
+    -This script will require the use of a Raspberry Pi or minimal Debian virtual machine running inside of your local network, and run as crontab.
+    -This script will require very basic knowledge to modify it to your needs, such as setting the local ip address of the desired camera, and FTP information for your PWS_Dashboard web server.
+    -Functionality of this script is fairly straightforward. It will perform a WGET [http://yourcameralocalip/snap.jpeg at the interval you specify in crontab. Followed by an FTP Push to your specified web server, overwriting any existing file of the same "snap.jpeg" name in the target directory.
+    -This should be used in conjunction with with a future updated "webcam_cron" script for Unifi.
+	
