@@ -2,9 +2,5 @@
 
 This is a custom scripts library. 
 
-Scripts are organized using one of the following hierarchies: 
-
-#	egtechgeek\CustomScripts\relevant3rdpartyapp\deploymentscenario\scriptname
-#	egtechgeek\CustomScripts\scriptname
-
-Please see subdirectories for readme info for each script.
+## I am currently debating between deprecating this repo enntirely, or repurposing it as private. <br> 
+All Previous Contents have been moved to my PWS_Dashboard-WeatherWatch repo.
