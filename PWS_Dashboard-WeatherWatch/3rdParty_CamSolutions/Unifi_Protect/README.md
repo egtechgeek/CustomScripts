@@ -7,9 +7,7 @@
 
 -Install Prerequisites:		
 ```
-function test() {
-  console.log("sudo apt update && sudo apt install wget ftp curl");
-}
+sudo apt update && sudo apt install wget ftp curl
 ```	
 
 -Download unificam.sh:		
