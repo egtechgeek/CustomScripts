@@ -31,7 +31,7 @@ In usb_capture.sh, Be sure to populate the following tags:
 
 
 ## Notes
--This script will require the use of a Raspberry Pi or minimal Debian machine.
--This script will require very basic knowledge to modify it to your needs, such as setting the USB port of your camera (/dev/ttyUSB0 is typically the default)  when no other usb devices are connected, and FTP information for your PWS_Dashboard web server.
--Functionality of this script will be fairly straightforward. It will perform an image capture at the interval you specify in crontab. Followed by an FTP Push to your specified web server in the target directory.
+-This script will require the use of a Raspberry Pi or minimal Debian machine.<br>
+-This script will require very basic knowledge to modify it to your needs, such as setting the USB port of your camera (/dev/ttyUSB0 is typically the default)  when no other usb devices are connected, and FTP information for your PWS_Dashboard web server.<br>
+-Functionality of this script will be fairly straightforward. It will perform an image capture at the interval you specify in crontab. Followed by an FTP Push to your specified web server in the target directory.<br>
 -This should be used in conjunction with with a future updated "usbcam_cron" script for usb-capture.
