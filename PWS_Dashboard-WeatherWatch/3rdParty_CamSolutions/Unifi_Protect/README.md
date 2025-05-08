@@ -6,7 +6,11 @@
 -Starting with a Raspberry Pi running Raspbian or Debian, OpenSSH highly recommended
 
 -Install Prerequisites:		
-	sudo apt update && sudo apt install wget ftp curl
+```
+function test() {
+  console.log("sudo apt update && sudo apt install wget ftp curl");
+}
+```	
 
 -Download unificam.sh:		
 	wget https://github.com/egtechgeek/CustomScripts/blob/main/PWS_Dashboard-WeatherWatch/3rdParty_CamSolutions/Unifi_Protect/unificam.sh
