@@ -11,15 +11,15 @@ sudo apt update && sudo apt install wget ftp curl
 ```	
 
 -Download unificam.sh:		
-	wget https://github.com/egtechgeek/CustomScripts/blob/main/PWS_Dashboard-WeatherWatch/3rdParty_CamSolutions/Unifi_Protect/unificam.sh
+```wget https://github.com/egtechgeek/CustomScripts/blob/main/PWS_Dashboard-WeatherWatch/3rdParty_CamSolutions/Unifi_Protect/unificam.sh```
 
 -Edit unificam.sh:			
-	nano unificam.sh
+```nano unificam.sh```
 In unificam.sh, Be sure to populate the following tags:
 DOWNLOAD_URL, NEW_FILENAME, FTP_HOST, FTP_USER, FTP_PASS, REMOTE_PATH
 			
 -Test run the script:		
-	./unificam.sh
+```./unificam.sh```
 
 -If all goes well, configure unificam.sh to run at your desired intervals automatically by using crontab.
 
