@@ -6,18 +6,26 @@
 -Starting with a Raspberry Pi running Raspbian or Debian, headless, OpenSSH required to ensure no additional usb devices are present
 
 -Install Prerequisites:		
-	sudo apt update && sudo apt install wget ftp curl fswebcam
+```
+sudo apt update && sudo apt install wget ftp curl fswebcam
+```
 
 -Download unificam.sh:		
-	wget https://github.com/egtechgeek/CustomScripts/blob/main/PWS_Dashboard-WeatherWatch/3rdParty_CamSolutions/USB_Cameras/usb_capture.sh
+```
+wget https://github.com/egtechgeek/CustomScripts/blob/main/PWS_Dashboard-WeatherWatch/3rdParty_CamSolutions/USB_Cameras/usb_capture.sh
+```
 
 -Edit usb_capture.sh:			
-	nano usb_capture.sh
+```
+nano usb_capture.sh
+```
 In usb_capture.sh, Be sure to populate the following tags:
 	FTP_HOST, FTP_USER, FTP_PASS, REMOTE_PATH, IMAGE_NAME, NEW_FILENAME
 			
 -Test run the script:		
-	./usb_capture.sh
+```
+./usb_capture.sh
+```
 
 -If all goes well, configure usb_capture.sh to run at your desired intervals automatically by using crontab.
 
